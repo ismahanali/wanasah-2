@@ -1,0 +1,679 @@
+@font-face {
+    font-family: medium;
+    src: url(./fonts/Circular-Medium.ttf);
+}
+@font-face {
+    font-family: Qanelas;
+    src: url(./fonts/Qanelas-SemiBold.ttf);
+}
+@font-face {
+    font-family: standard;
+    src: url(./fonts/CircularStd-Book.otf);
+}
+@font-face {
+  font-family: Qanelas-medium;
+  src: url(./fonts/Qanelas-Medium.otfs);
+}
+
+
+
+.header-text p{
+  color: #365A4F;
+  font-size: 33px;
+  text-align: center;
+  font-family: 'medium';
+}
+
+
+header,
+body {
+    background-color: #F3ECEC;
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+    height: 670px;
+    justify-content: space-between;
+}
+.header-text {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.navigation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10%;
+    width: 90%;
+    margin: 0 auto;
+}
+.type {
+  color: blue;
+  size: 14px;
+}
+.logo img {
+    height: 50px;
+    width: 80px;
+}
+
+.header-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-image {
+    background-image: url(./images/mobile-header-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+.circle-sun {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  color: #365A4F;
+}
+
+.first-section {
+  height: 360px;
+  background-color: #DAE4DE;
+}
+.vision-container {
+  text-align: center;
+  display: flex;
+  height: 380px;
+  width: 79%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.vision-header {
+  margin-bottom: 20px;
+}
+.vision-header h2 {
+  font-family: 'Qanelas';
+  font-size: 35px;
+  color: #365A4F;
+}
+.vision-paragraph {
+  margin-bottom: 20px;
+
+}
+.vision-paragraph p {
+  font-family: 'standard';
+  font-size: 23px;
+  color: #3d3c3c;
+}
+
+.learn-more-button button {
+  font-family: 'standard';
+  border: none;
+  color: white;
+  padding: 11px 26px;
+  background-color: #C27441;
+  
+}
+
+
+
+.second-section {
+  height: 990px;
+  background-color: #F3ECEC;
+}
+
+.values-container {
+  padding-top: 40px;
+  display: flex;
+  height: 900px;
+  flex-direction: column;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.value-icon {
+  opacity: .8;
+}
+.value-header h3 {
+  color: #365A4F;
+  font-family: 'standard';
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px 0;
+
+}
+.value-paragraph p {
+  font-family: 'Qanelas';
+  font-size: 15px;
+  color: #3d3c3c;
+  width: 72%;
+  margin: 0 auto;
+}
+
+.third-section {
+  background-color: #DAE4DE;
+  height: 506px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.quote-tagline {
+  text-transform: uppercase;
+  font-family: 'medium';
+  color: #C27441;
+  font-size: 15px;
+}
+.quote-header h2 {
+  color:#365A4F;
+  font-family: 'Qanelas';
+  font-size: 35px;
+}
+
+.third-section-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 389px;
+}
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+.quote-container {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.empty {
+  width: 19%;
+}
+.carousel {
+  width: 75%;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 260px;
+  margin-right: 10px;
+  background: #365A4F;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.quote {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.quotation-icon p {
+  height: 65px;
+  padding-left: 20px;
+  font-size: 70px;
+  text-align: left;
+  font-family: 'Qanelas';
+  color: #F4EEEA;
+}
+.quotation-paragraph {
+  width: 80%;
+  margin: 0 auto;
+}
+.quotation-paragraph p {
+  color: #F4EEEA;
+  font-family: 'Qanelas';
+  font-size: 19px;
+  text-align: right;
+}
+
+.line {
+  margin-top: 9px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid #365A4F;
+  width: 51%;
+  box-shadow: -1px 2px rgb(36, 34, 34);
+  text-align: right;
+  align-self: flex-end;
+  margin-right: 22px;
+  opacity: .5;
+}
+
+.quotee p {
+  color: #F4EEEA;
+  font-family: 'Qanelas';
+  font-size: 15px;
+  text-align: right;
+  margin-right: 22px;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+
+/* get involved section */
+
+.fourth-section {
+  background-image: url(./images/get-involved-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 506px;
+}
+
+.get-involved-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+.get-involved-header {
+  margin-bottom: 22px;
+  margin-top: 24%;
+}
+.get-involved-header h2 {
+  color: #F3ECEC;
+  font-size: 35px;
+  font-family: 'Qanelas';
+
+}
+.large-button {
+  margin-bottom: 30px;
+}
+.large-button button {
+  background-color: #C07341;
+  color: #F3ECEC;
+  font-size: 20px;
+  font-family: 'Qanelas';
+  padding: 13px;
+  width: 209px;
+  border: none;
+
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #F3ECEC;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.footer-headline p {
+  font-size: 15px;
+  font-family: 'Qanelas';
+  color: #365A4F;
+}
+.email a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #3d3c3c;
+  font-family: 'medium';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 800px) {
+  .desktop-menu {
+    visibility: hidden;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* reset */
+/*******************
+ Box Sizing
+ *******************/
+ html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  /*******************
+   Core body defaults
+   @see https://hankchizljaw.com/wrote/a-modern-css-reset/
+   *******************/
+  body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  
+  /****************************
+   Generic Margins and Paddings
+   ****************************/
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  li,
+  p,
+  pre,
+  blockquote,
+  figure,
+  figcaption,
+  hr,
+  dl,
+  dd {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*******************
+   Lists
+   *******************/
+  ul {
+    list-style: none;
+  }
+  
+  /*******************
+   Forms and buttons
+   *******************/
+  input,
+  textarea,
+  select,
+  button {
+    color: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+  }
+  
+  /* I usually expand input and textarea to full-width */
+  input[type="text"],
+  textarea {
+    width: 100%;
+  }
+  
+  /* More friendly border */
+  input,
+  textarea,
+  button {
+    border: 1px solid gray;
+  }
+  
+  /* Some defaults for one-liner buttons */
+  button {
+    padding: 0.75em 1em;
+    line-height: inherit;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  
+  button * {
+    pointer-events: none;
+  }
+  
+  /***********************************
+   Easy responsive for media elements
+   ***********************************/
+  img,
+  iframe,
+  video,
+  object,
+  embed {
+    display: block;
+    max-width: 100%;
+  }
+  
+  svg {
+    max-width: 100%;
+  }
+  
+  /*******************
+   Useful table styles
+   *******************/
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  
+  /*******************
+   The hidden attribute
+   *******************/
+  [hidden] {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  /*******************
+   Noscript
+   *******************/
+  noscript {
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  
+  /*******************
+   Tabindex
+   *******************/
+  [tabindex="-1"] {
+    outline: none !important;
+  }
+  
+  /*******************
+   Remove animations and transitions
+   @see https://hankchizljaw.com/wrote/a-modern-css-reset/
+   *******************/
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  /*******************
+   * Screen-ready only class to hide content visually
+   * Solution by Joe Watkins.
+   * @see https://zellwk.com/blog/hide-content-accessibly/
+   *******************/
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  /* hamburger menu styles */
+  .button_container {
+    position: absolute;
+    top: 7%;
+    right: 45%;
+    height: 27px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease;
+  }
+  .button_container:hover {
+    opacity: .7;
+  }
+  .button_container.active .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #FFF;
+  }
+  .button_container.active .middle {
+    opacity: 0;
+    background: #FFF;
+  }
+  .button_container.active .bottom {
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #FFF;
+  }
+  .button_container span {
+    background: #4F6D63;
+    border: none;
+    height: 2px;
+    width: 113%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+  
+  .button_container span:nth-of-type(2) {
+    top: 11px;
+  }
+  .button_container span:nth-of-type(3) {
+    top: 22px;
+  }
+  
+  .overlay {
+    position: fixed;
+    background: #1abc9c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+  }
+  .overlay.open {
+    opacity: .9;
+    visibility: visible;
+    height: 100%;
+  }
+  .overlay.open li {
+    animation: fadeInRight .5s ease forwards;
+    animation-delay: .35s;
+  }
+  .overlay.open li:nth-of-type(2) {
+    animation-delay: .4s;
+  }
+  .overlay.open li:nth-of-type(3) {
+    animation-delay: .45s;
+  }
+  .overlay.open li:nth-of-type(4) {
+    animation-delay: .50s;
+  }
+  .overlay nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: 'Varela Round', serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+  }
+  .overlay ul li {
+    display: block;
+    height: 25%;
+    height: calc(100% / 4);
+    min-height: 50px;
+    position: relative;
+    opacity: 0;
+  }
+  .overlay ul li a {
+    display: block;
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+    width: 100%;
+  }
+  .overlay ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: #FFF;
+    transition: .35s;
+  }
+  
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  /* hamburger menu styles */
+
