@@ -22,7 +22,7 @@
                         <li><a href="#">About</a></li>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Programs</a></li>
-                        <li class="donation-text"><a href="#">Donate</a></li>
+                        <li class="donate-text"><a href="#">Donate</a></li>
                     </ul>
                 </div>
                 <!-- [THE HAMBURGER] -->
@@ -46,7 +46,7 @@
 
             <div class="header-content-container">
                 <div class="header-text">
-                    <p>Wanasah is bridging the gap between mental health and <span class="type">dignity</span></p>
+                    <p>Wanasah is bridging the gap between mental health and <br><span class="type"></span></p>
                 </div>
                 <div class="header-image">
                     <span class="circle-sun"></span>
@@ -249,9 +249,50 @@
     </div>
 
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+
+    <script type="text/javascript" src="typed.js"></script>
+
+    <script type="text/javascript">
+            $('#toggle').click(function() {
+        $(this).toggleClass('active');
+        $('#overlay').toggleClass('open');
+        });
+  
+
+        var typed = new Typed('.type',{
+                strings: [
+                    'recovery',
+                    'spirituality',
+                    'inclusion',
+                    'dignity',
+                    'race',
+                    'access',
+                    'youth',
+                    'soul',
+                    'connection',
+                    'community',
+                ],
+                showCursor: false,
+                backDelay: 1200,
+                fadeOut: true,
+                typeSpeed: 120,
+                fadeOutClass: 'typed-fade-out',
+                fadeOutDelay:2000,
+                loop: true,
+                loopCount: Infinity,
+            });
+    </script>
+
+    
+    
+    
+
+
+    <script type="text/javascript">
+      window.AOS.init({ disable: "mobile" });
+    </script>
     
 </body>
 
