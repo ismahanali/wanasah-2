@@ -1,32 +1,35 @@
 @font-face {
-    font-family: medium;
-    src: url(./fonts/Circular-Medium.ttf);
+  font-family: medium;
+  src: url(./fonts/Circular-Medium.ttf);
 }
 @font-face {
-    font-family: Qanelas;
-    src: url(./fonts/Qanelas-SemiBold.ttf);
+  font-family: Qanelas-med;
+  src: url(./fonts/Qanelas-Medium.otf);
 }
 @font-face {
-    font-family: standard;
-    src: url(./fonts/CircularStd-Book.otf);
+  font-family: Qanelas;
+  src: url(./fonts/Qanelas-SemiBold.ttf);
+}
+@font-face {
+  font-family: standard;
+  src: url(./fonts/CircularStd-Book.otf);
 }
 @font-face {
   font-family: Qanelas-medium;
   src: url(./fonts/Qanelas-Medium.otfs);
 }
 
-body{
-  background-color: #F3ECEC;
+body {
+  background-color: #f3ecec;
 }
 
 .type {
-
   display: inline-block;
+  color: #f28b5e;
 }
 
 header {
-  background-color: #c5cfd9;
-
+  background-color: #f3ecec;
 }
 
 .header-content-container {
@@ -35,15 +38,26 @@ header {
   justify-content: space-between;
   height: 600px;
 }
+
+.hover:hover .update {
+  display: none;
+}
+.hover:hover .orig {
+  display: inline-block}
+
+.hover .orig {
+  display:none;
+}
+
 .header-text {
   width: 90%;
   margin: 0 auto;
   text-align: center;
   height: 50%;
   display: flex;
- color: #3d3c3c;
+  color: #3d3c3c;
   font-size: 32px;
-  font-family: 'medium';
+  font-family: "Qanelas-med";
   align-self: center;
   align-items: center;
 }
@@ -55,43 +69,53 @@ header {
   height: 50%;
   background-size: cover;
   background-position: center center;
-  background-color: #c5cfd9;
-
 }
-
-
 
 .header-container {
- 
-
 }
 
-
-
 .navigation-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 10%;
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10%;
+  width: 90%;
+  margin: 0 auto;
 }
 .desktop-menu {
   display: none;
 }
-  
-
-.logo img {
-    height: 50px;
-    width: 80px;
+.desktop-menu ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "standard";
+  color: #3d3c3c;
+}
+.desktop-menu ul li:last-child {
+  padding: 5px 15px;
+  align-self: center;
+  background-color: #ff8d5f;
+  box-shadow: 5px 10px red !important:
+}
+.donation-text {
+  background-color: #ff8d5f;
+  color: white;
+  border: none;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 10px 3px 7px rgba(228,225,211,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 0px 10px 3px 7px rgba(228,225,211,0);
 }
 
-
-
+.desktop-menu .donation-text a {
+  color: white;
+}
+.logo img {
+  width: 120px;
+}
 
 .first-section {
   height: 360px;
-  background-color: #C5CFC6;
+  background-color: #c5cfc6;
 }
 .vision-container {
   text-align: center;
@@ -103,40 +127,34 @@ header {
   justify-content: center;
 }
 
-
-
 .vision-header {
   margin-bottom: 20px;
 }
 .vision-header h2 {
-  font-family: 'Qanelas';
+  font-family: "Qanelas";
   font-size: 35px;
-  color: #365A4F;
+  color: #365a4f;
 }
 .vision-paragraph {
   margin-bottom: 20px;
-
 }
 .vision-paragraph p {
-  font-family: 'standard';
+  font-family: "standard";
   font-size: 23px;
   color: #3d3c3c;
 }
 
 .learn-more-button button {
-  font-family: 'standard';
+  font-family: "standard";
   border: none;
   color: white;
   padding: 11px 26px;
-  background-color: #C27441;
-  
+  background-color: #c27441;
 }
-
-
 
 .second-section {
   height: 990px;
-  background-color: #F3ECEC;
+  background-color: #f3ecec;
 }
 
 .values-container {
@@ -147,6 +165,7 @@ header {
   width: 75%;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .value {
@@ -155,21 +174,21 @@ header {
   height: 30%;
   justify-content: center;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 .value-icon {
-  opacity: .8;
+  opacity: 0.8;
 }
 .value-header h3 {
-  color: #365A4F;
-  font-family: 'standard';
+  color: #365a4f;
+  font-family: "standard";
   text-transform: uppercase;
   font-size: 15px;
   padding: 10px 0;
-
 }
 .value-paragraph p {
-  font-family: 'Qanelas';
+  font-family: "Qanelas";
   font-size: 15px;
   color: #3d3c3c;
   width: 72%;
@@ -177,7 +196,7 @@ header {
 }
 
 .third-section {
-  background-color: #C5CFC6;
+  background-color: #c5cfc6;
   height: 506px;
   display: flex;
   flex-direction: column;
@@ -185,13 +204,13 @@ header {
 }
 .quote-tagline {
   text-transform: uppercase;
-  font-family: 'medium';
-  color: #C27441;
+  font-family: "medium";
+  color: #c27441;
   font-size: 15px;
 }
 .quote-header h2 {
-  color:#365A4F;
-  font-family: 'Qanelas';
+  color: #365a4f;
+  font-family: "Qanelas";
   font-size: 35px;
 }
 
@@ -202,9 +221,13 @@ header {
   height: 389px;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-body { font-family: sans-serif; }
+body {
+  font-family: sans-serif;
+}
 .quote-container {
   padding-top: 20px;
   display: flex;
@@ -222,7 +245,7 @@ body { font-family: sans-serif; }
   width: 100%;
   height: 260px;
   margin-right: 10px;
-  background: #365A4F;
+  background: #365a4f;
   border-radius: 5px;
   counter-increment: carousel-cell;
 }
@@ -236,16 +259,16 @@ body { font-family: sans-serif; }
   padding-left: 20px;
   font-size: 70px;
   text-align: left;
-  font-family: 'Qanelas';
-  color: #F4EEEA;
+  font-family: "Qanelas";
+  color: #f4eeea;
 }
 .quotation-paragraph {
   width: 80%;
   margin: 0 auto;
 }
 .quotation-paragraph p {
-  color: #F4EEEA;
-  font-family: 'Qanelas';
+  color: #f4eeea;
+  font-family: "Qanelas";
   font-size: 19px;
   text-align: right;
 }
@@ -253,25 +276,24 @@ body { font-family: sans-serif; }
 .line {
   margin-top: 9px;
   margin-bottom: 5px;
-  border-bottom: 2px solid #365A4F;
+  border-bottom: 2px solid #365a4f;
   width: 51%;
   box-shadow: -1px 2px rgb(36, 34, 34);
   text-align: right;
   align-self: flex-end;
   margin-right: 22px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .quotee p {
-  color: #F4EEEA;
-  font-family: 'Qanelas';
+  color: #f4eeea;
+  font-family: "Qanelas";
   font-size: 15px;
   text-align: right;
   margin-right: 22px;
   margin-top: 5px;
   opacity: 0.7;
 }
-
 
 /* get involved section */
 
@@ -294,29 +316,27 @@ body { font-family: sans-serif; }
   margin-bottom: 22px;
 }
 .get-involved-header h2 {
-  color: #F3ECEC;
-  font-size: 35px;
-  font-family: 'Qanelas';
-
+  color: #f3ecec;
+  font-size: 9vw;
+  font-family: "Qanelas";
 }
 .large-button {
   margin-bottom: 30px;
 }
 .large-button button {
-  background-color: #C07341;
-  color: #F3ECEC;
+  background-color: #c07341;
+  color: #f3ecec;
   font-size: 20px;
-  font-family: 'Qanelas';
+  font-family: "Qanelas";
   padding: 13px;
   width: 209px;
   border: none;
-
 }
 
 footer {
   height: 100px;
   width: 100%;
-  background-color: #F3ECEC;
+  background-color: #f3ecec;
 }
 .footer-container {
   display: flex;
@@ -330,34 +350,19 @@ footer {
 
 .footer-headline p {
   font-size: 15px;
-  font-family: 'Qanelas';
-  color: #365A4F;
+  font-family: "Qanelas";
+  color: #365a4f;
 }
 .email a {
   font-size: 25px;
   text-decoration: none;
   color: #3d3c3c;
-  font-family: 'medium';
+  font-family: "medium";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* media queries */
 
-
 @media only screen and (max-width: 4500px) {
- 
   .mobile-menu {
     display: none;
   }
@@ -372,35 +377,23 @@ footer {
     display: flex;
     justify-content: space-between;
   }
-  ul li:last-child {
-    padding: 5px 15px;
-    align-self: center;
-    background-color: white;
-  }
-  .donation-text a {
-    color: #F3ECEC  !important;
+ 
+  .donation-text li {
+    color: white !important;
   }
 
   ul li {
     align-self: center;
   }
-    ul li a {
-      font-size: 17px;
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Qanelas';
-    color: #3d3c3c;
-    
-  }
+
   header {
-    
     background-image: url(./images/2xl-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-   height: 970px;
-}
+    height: 970px;
+  }
   .header-text {
     height: 70%;
     width: 50%;
@@ -414,17 +407,24 @@ footer {
   .navigation-container {
     padding-top: 5%;
   }
-  
- 
 }
-@media only screen and (min-width: 1500px) {
-.quotation-paragraph p {
-  font-size: 22px;
-}
-
+@media only screen and (min-width: 1400px) {
+  .quotation-paragraph p {
+    font-size: 22px;
+  }
+  .navigation-container {
+    padding-top: 3%;
+  }
+  header {
+    background-image: url(./images/alpha-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 967px;
+  }
 }
 @media only screen and (max-width: 1500px) {
- 
   .mobile-menu {
     display: none;
   }
@@ -433,46 +433,33 @@ footer {
   }
   .desktop-menu {
     display: block;
-    width: 50%;
+    width: 40%;
   }
   .desktop-menu ul {
     display: flex;
     justify-content: space-between;
   }
-  ul li:last-child {
-    padding: 5px 15px;
-    align-self: center;
-    background-color: #FF8D5F;
-  }
-  .donation-text a {
-    color: #F3ECEC  !important;
+
+  .donation-text li {
+    color: white !important;
   }
 
   ul li {
     align-self: center;
   }
-    ul li a {
-      font-size: 17px;
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Qanelas';
-    color: #3d3c3c;
-    
-  }
+
   header {
-    
     background-image: url(./images/2xl-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    
-}
-.header-text {
-  margin-top: 0%;
-  height: 80%;
-  width: 66%;
-}
+  }
+  .header-text {
+    margin-top: 0%;
+    height: 80%;
+    width: 66%;
+  }
   .header-text p {
     font-size: 45px;
   }
@@ -480,16 +467,13 @@ footer {
     display: none;
   }
   .navigation-container {
-    padding-top: 5%;
+    padding-top: 3%;
   }
-  
- 
 }
 
 @media only screen and (min-width: 1250px) {
-
   .vision-paragraph p {
-    font-size: 38px !important;  
+    font-size: 38px !important;
   }
   .vision-container {
     height: 100%;
@@ -497,39 +481,30 @@ footer {
   }
   .first-section {
     height: 500px;
-  background-color: #C5CFC6;
-  display: flex;
+    background-color: #c5cfc6;
+    display: flex;
   }
-
-
 }
-
 
 @media only screen and (min-width: 940px) {
- 
-
   .header-text p {
-    font-size: 52px;
-  align-self: center;
-  padding-bottom: 3%;
+    font-size: 59px;
+    align-self: center;
+    padding-bottom: 9%;
+    text-align: center;
+    line-height: 68px;
   }
 
-    .vision-paragraph p {
-      font-size: 33px;  
-    }
-
+  .vision-paragraph p {
+    font-size: 33px;
   }
-@media only screen and (min-width: 900px) {
-
-
-
-  
-  
-.empty {
-  width: 37%;
 }
-.carousel-cell {
-  width: 55%;
+@media only screen and (min-width: 900px) {
+  .empty {
+    width: 37%;
+  }
+  .carousel-cell {
+    width: 55%;
   }
   .values-container {
     flex-direction: row;
@@ -543,28 +518,36 @@ footer {
   .second-section {
     height: 315px;
   }
+}
 
+@media only screen and (min-width: 640px) {
+  .menu-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: none  !important;
+  }
+  .menu-btn a {
+    display: none !important;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-
 }
 @media only screen and (max-width: 1200px) {
-
   header {
-    
     background-image: url(./images/2xl-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
     height: 967px;
-}
+  }
 
-.header-text {
-  height: 80%;
-  width: 66%;
-}
+  .header-text {
+    height: 80%;
+    width: 66%;
+  }
   .mobile-menu {
     display: none;
   }
@@ -579,26 +562,15 @@ footer {
     display: flex;
     justify-content: space-between;
   }
-  ul li:last-child {
-    padding: 5px 15px;
-    align-self: center;
-    background-color: #FF8D5F;
-  }
-  .donation-text a {
-    color: #F3ECEC  !important;
+
+  .donation-text li {
+    color: white !important;
   }
 
   ul li {
     align-self: center;
   }
-    ul li a {
-      font-size: 17px;
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Qanelas';
-    color: #3d3c3c;
-    
-  }
+
   header {
     background-image: url(./images/extra-lg-bg.png);
     background-size: cover;
@@ -606,8 +578,8 @@ footer {
     background-position: center center;
     width: 100%;
     height: 920px;
-}
- 
+  }
+
   .header-text p {
     font-size: 50px;
   }
@@ -617,12 +589,13 @@ footer {
   .navigation-container {
     padding-top: 5%;
   }
- 
 }
 
-
 @media only screen and (max-width: 1000px) {
-
+  .logo img {
+    height: 50px;
+    width: 80px;
+  }
   .mobile-menu {
     display: none;
   }
@@ -637,26 +610,15 @@ footer {
     display: flex;
     justify-content: space-between;
   }
-  ul li:last-child {
-    padding: 5px 15px;
-    align-self: center;
-    background-color: #FF8D5F;
-  }
-  .donation-text a {
-    color: #F3ECEC  !important;
+ 
+  .donation-text li {
+    color: white !important;
   }
 
   ul li {
     align-self: center;
   }
-    ul li a {
-      font-size: 17px;
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Qanelas';
-    color: #3d3c3c;
-    
-  }
+
   header {
     background-image: url(./images/extra-lg-bg.png);
     background-size: cover;
@@ -664,7 +626,7 @@ footer {
     background-position: center center;
     width: 100%;
     height: 920px;
-}
+  }
   .header-text {
     height: 70%;
     width: 50%;
@@ -678,10 +640,8 @@ footer {
   .navigation-container {
     padding-top: 5%;
   }
-
 }
 @media only screen and (max-width: 999px) {
- 
   .header-text {
     width: 71%;
   }
@@ -706,26 +666,15 @@ footer {
     display: flex;
     justify-content: space-between;
   }
-  ul li:last-child {
-    padding: 5px 15px;
-    align-self: center;
-    background-color: #FF8D5F;
-  }
-  .donation-text a {
-    color: #F3ECEC  !important;
+
+  .donation-text li {
+    color: white !important;
   }
 
   ul li {
     align-self: center;
   }
-    ul li a {
-      font-size: 17px;
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Qanelas';
-    color: #3d3c3c;
-    
-  }
+
   .fourth-section {
     display: flex;
     flex-direction: column;
@@ -743,16 +692,13 @@ footer {
     background-position: center center;
     width: 100%;
     height: 900px;
-}
+  }
   .header-image {
     display: none;
   }
-
 }
 
-
 @media only screen and (max-width: 840px) {
-
   .fourth-section {
     display: flex;
     flex-direction: column;
@@ -770,37 +716,31 @@ footer {
     background-position: center center;
     width: 100%;
     height: 100%;
-}
+  }
   .desktop-menu {
     display: block;
     width: 70%;
   }
 }
 
-
 @media only screen and (max-width: 740px) {
   .header-text {
-    
   }
   .header-text p {
     font-size: 36px;
-
   }
-.desktop-menu {
-  display: block;
-  width: 70%;
-}
+  .desktop-menu {
+    display: block;
+    width: 70%;
+  }
 }
 @media only screen and (max-width: 835px) {
- 
   .header-text {
     height: 50%;
-}
+  }
   .header-text p {
     margin-top: 0;
   }
-
-
 }
 @media only screen and (max-width: 658px) {
   .desktop-menu {
@@ -813,9 +753,8 @@ footer {
     display: block;
   }
   header {
-  
     height: 100%;
-    
+    background-image: none;
   }
   .navigation-container {
     padding-top: 5%;
@@ -829,18 +768,11 @@ footer {
     padding-top: 9%;
   }
 
-
   .header-image {
     height: 65%;
     display: block;
   }
 }
-
-
-
-
-
-
 
 @media only screen and (max-width: 555px) {
   .desktop-menu {
@@ -854,18 +786,16 @@ footer {
   }
   .header-text {
     height: 40%;
-    width: 85%;
+    width: 80%;
   }
 
   .header-text p {
     align-self: end;
-    font-size: 37px;
-
+    font-size: 30px;
   }
   header {
-   
     height: 100%;
-    
+    background-image: none;
   }
 
   .header-image {
@@ -873,9 +803,7 @@ footer {
     height: 54%;
     display: block;
   }
-
 }
-
 
 @media only screen and (max-width: 475px) {
   .desktop-menu {
@@ -891,13 +819,12 @@ footer {
     display: none;
   }
   header {
-   
-    height: 620px
-    
+    height: 620px;
+    background-image: none;
   }
   .header-text {
     height: 40%;
-}
+  }
   .header-image {
     height: 65%;
     background-size: contain;
@@ -907,13 +834,19 @@ footer {
   .navigation-container {
     padding-top: 4%;
   }
- 
-
 }
 
-
-
 @media only screen and (max-width: 450px) {
+  .hover:hover .update {
+    display: none;
+  }
+  .hover:hover .orig {
+    display: inline-block}
+  
+  .hover .orig {
+    display:none;
+  }
+  
   .desktop-menu {
     display: none;
   }
@@ -921,12 +854,11 @@ footer {
     display: none;
   }
   header {
-  
-
+    background-image: none;
   }
   .navigation-container {
     padding-top: 7% !important;
-}
+  }
   .header-image {
     background-size: contain;
     height: 56%;
@@ -935,14 +867,15 @@ footer {
     height: 42%;
   }
   .header-text p {
-    margin-top: 90px;
-    font-size: 30px;
-  }
+    padding-top: 0%;
+    margin-top: 40px;
+    font-size: 27px;
+    max-height: 142px;
+    min-height: 142px;
+}
   .navigation-container {
     padding-top: 4%;
   }
- 
-
 }
 @media only screen and (max-width: 300px) {
   .desktop-menu {
@@ -950,334 +883,352 @@ footer {
   }
   header {
     height: 620px;
-   
+    background-image: none;
   }
-  
+
   .header-image {
     background-size: contain;
   }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* reset */
 /*******************
  Box Sizing
  *******************/
- html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  /*******************
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*******************
    Core body defaults
    @see https://hankchizljaw.com/wrote/a-modern-css-reset/
    *******************/
-  body {
-    min-height: 100vh;
-    scroll-behavior: smooth;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-  }
-  
-  /****************************
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/****************************
    Generic Margins and Paddings
    ****************************/
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  ul,
-  ol,
-  li,
-  p,
-  pre,
-  blockquote,
-  figure,
-  figcaption,
-  hr,
-  dl,
-  dd {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /*******************
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+figcaption,
+hr,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/*******************
    Lists
    *******************/
-  ul {
-    list-style: none;
-  }
-  
-  /*******************
+ul {
+  list-style: none;
+}
+
+/*******************
    Forms and buttons
    *******************/
-  input,
-  textarea,
-  select,
-  button {
-    color: inherit;
-    font: inherit;
-    letter-spacing: inherit;
-  }
-  
-  /* I usually expand input and textarea to full-width */
-  input[type="text"],
-  textarea {
-    width: 100%;
-  }
-  
-  /* More friendly border */
-  input,
-  textarea,
-  button {
-    border: 1px solid gray;
-  }
-  
-  /* Some defaults for one-liner buttons */
-  button {
-    padding: 0.75em 1em;
-    line-height: inherit;
-    border-radius: 0;
-    background-color: transparent;
-  }
-  
-  button * {
-    pointer-events: none;
-  }
-  
-  /***********************************
+input,
+textarea,
+select,
+button {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+/* I usually expand input and textarea to full-width */
+input[type="text"],
+textarea {
+  width: 100%;
+}
+
+/* More friendly border */
+input,
+textarea,
+button {
+  border: 1px solid gray;
+}
+
+/* Some defaults for one-liner buttons */
+button {
+  padding: 0.75em 1em;
+  line-height: inherit;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+button * {
+  pointer-events: none;
+}
+
+/***********************************
    Easy responsive for media elements
    ***********************************/
-  img,
-  iframe,
-  video,
-  object,
-  embed {
-    display: block;
-    max-width: 100%;
-  }
-  
-  svg {
-    max-width: 100%;
-  }
-  
-  /*******************
+img,
+iframe,
+video,
+object,
+embed {
+  display: block;
+  max-width: 100%;
+}
+
+svg {
+  max-width: 100%;
+}
+
+/*******************
    Useful table styles
    *******************/
-  table {
-    table-layout: fixed;
-    width: 100%;
-  }
-  
-  /*******************
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+/*******************
    The hidden attribute
    *******************/
-  [hidden] {
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-  /*******************
+[hidden] {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*******************
    Noscript
    *******************/
-  noscript {
-    display: block;
-    margin-bottom: 1em;
-    margin-top: 1em;
-  }
-  
-  /*******************
+noscript {
+  display: block;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+/*******************
    Tabindex
    *******************/
-  [tabindex="-1"] {
-    outline: none !important;
-  }
-  
-  /*******************
+[tabindex="-1"] {
+  outline: none !important;
+}
+
+/*******************
    Remove animations and transitions
    @see https://hankchizljaw.com/wrote/a-modern-css-reset/
    *******************/
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
-  
-  /*******************
+}
+
+/*******************
    * Screen-ready only class to hide content visually
    * Solution by Joe Watkins.
    * @see https://zellwk.com/blog/hide-content-accessibly/
    *******************/
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: auto;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* hamburger menu styles */
+/* 
+- Name: Responsive overlay menu framework
+- Version: 1.0
+- Latest update: 15.9.2015.
+- Author: Mario Loncarek
+- Author web site: http://marioloncarek.com
+*/
+
+body,
+html {
     margin: 0;
     padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  /* hamburger menu styles */
-
-
-  .button_container {
-    position: absolute;
-    align-self: center;
-    right: 45%;
-    height: 27px;
-    width: 35px;
-    cursor: pointer;
-    z-index: 100;
-    transition: opacity .25s ease;
-  }
-  .button_container:hover {
-    opacity: .7;
-  }
-  .button_container.active .top {
-    transform: translateY(11px) translateX(0) rotate(45deg);
-    background: #FFF;
-  }
-  .button_container.active .middle {
-    opacity: 0;
-    background: #FFF;
-  }
-  .button_container.active .bottom {
-    transform: translateY(-11px) translateX(0) rotate(-45deg);
-    background: #FFF;
-  }
-  .button_container span {
-    background: #4F6D63;
-    border: none;
-    height: 2px;
-    width: 113%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all .35s ease;
-    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    
 }
-  
-  .button_container span:nth-of-type(2) {
-    top: 11px;
-  }
-  .button_container span:nth-of-type(3) {
-    top: 22px;
-  }
-  
-  .overlay {
-    position: fixed;
-    background: #1abc9c;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .35s, visibility .35s, height .35s;
-    overflow: hidden;
-  }
-  .overlay.open {
-    opacity: .9;
-    visibility: visible;
-    height: 100%;
-  }
-  .overlay.open li {
-    animation: fadeInRight .5s ease forwards;
-    animation-delay: .35s;
-  }
-  .overlay.open li:nth-of-type(2) {
-    animation-delay: .4s;
-  }
-  .overlay.open li:nth-of-type(3) {
-    animation-delay: .45s;
-  }
-  .overlay.open li:nth-of-type(4) {
-    animation-delay: .50s;
-  }
-  .overlay nav {
-    position: relative;
-    height: 70%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 50px;
-    font-family: 'Varela Round', serif;
-    font-weight: 400;
-    text-align: center;
-  }
-  .overlay ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    height: 100%;
-  }
-  .overlay ul li {
-    display: block;
-    height: 25%;
-    height: calc(100% / 4);
-    min-height: 50px;
-    position: relative;
-    opacity: 0;
-  }
-  .overlay ul li a {
-    display: block;
-    position: relative;
-    color: #FFF;
-    text-decoration: none;
-    overflow: hidden;
-  }
-  .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
-    width: 100%;
-  }
-  .overlay ul li a:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0%;
-    transform: translateX(-50%);
-    height: 3px;
-    background: #FFF;
-    transition: .35s;
-  }
-  
-  @keyframes fadeInRight {
-    0% {
-      opacity: 0;
-      left: 20%;
-    }
-    100% {
-      opacity: 1;
-      left: 0;
-    }
-  }
-  /* hamburger menu styles */
 
+h3 {
+    color: #e9e9e9;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+h4 {
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0 0;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+/* OPEN / CLOSE BTNS */
+.menu-btn {
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    z-index: 999;
+    display: inline;
+    font-size: 32px;
+}
+.menu-btn a {
+    display: inline-block;
+    text-decoration: none;
+    /* safari hack */
+}
+.btn-open:after {
+    color: #333;
+    content: "\f394";
+    font-family: "Ionicons";
+    -webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition-property: all .2s linear 0s;
+}
+.btn-open:hover:after {
+    color: #34B484;
+}
+.btn-close:after {
+    color: #fff;
+    content: "\f2d7";
+    font-family: "Ionicons";
+    -webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition-property: all .2s linear 0s;
+}
+.btn-close:hover:after {
+    color: #34B484;
+}
+/* OVERLAY */
+.overlay {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background: #333;
+}
+.overlay .menu {
+    margin: 10% auto;
+    width: 80%;
+}
+.overlay .menu ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.overlay .menu ul li {
+    float: left;
+    padding: 20px 0;
+    width: 25%;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+.overlay .menu ul li a {
+    color: #34B484;
+    font-weight: bold;
+    font-size: 20px;
+}
+.overlay .menu ul ul {
+    margin-top: 50px;
+}
+.overlay .menu ul ul li {
+    position: relative;
+    float: none;
+    margin: 0;
+    width: 100%;
+    border: 0;
+}
+.overlay .menu ul ul li a {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+}
+.overlay .menu ul ul li a:hover {
+    color: #34b484;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .overlay .menu ul li {
+        float: none;
+        margin-bottom: 50px;
+        width: 100%;
+        border-bottom: 1px solid #575757;
+    }
+    .overlay .menu ul li:last-child {
+        border: 0;
+    }
+    .overlay .menu ul ul {
+        margin-top: 20px;
+    }
+    .menu-btn {
+        right: 25px;
+    }
+}
+
+.allexamples{
+  position:absolute;
+  bottom:0;
+  font-size:18px;
+  font-weight:bold;
+  width:100%;
+  text-align:center;
+  background:#e9e9e9;
+  padding:20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color:#333;
+  position:fixed;
+} 
+ 
+
+/* hamburger menu styles */
+
+/* old styles */
